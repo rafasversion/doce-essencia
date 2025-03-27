@@ -1,0 +1,20 @@
+import CarouselScroll from "./components/carrosselComponent.js";
+import Slide from "./components/slideComponent.js";
+import Accordion from "./components/accordionComponent.js";
+import Agendar from './components/agendarComponent.js';
+import Agendamentos from "./components/agendamentosComponent.js";
+
+const listarAgendamentos = new Agendamentos();
+listarAgendamentos.init();
+
+const agendar = new Agendar();
+agendar.init();
+
+const carrossel = new CarouselScroll();
+carrossel.init();
+
+const slide = new Slide();
+slide.init();
+
+const accordion = new Accordion('[data-anime="accordion"] .faq__lista-pergunta');
+accordion.init();

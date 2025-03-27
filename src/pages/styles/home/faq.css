@@ -1,0 +1,77 @@
+.faq {
+  background: var(--cor-2);
+}
+
+.faq__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0px;
+}
+
+.faq__container-titulo {
+  margin-bottom: 40px;
+}
+
+.faq__lista {
+  max-width: 700px;
+}
+.faq__lista-pergunta {
+  position: relative;
+}
+
+.faq__lista-pergunta::before {
+  content: "";
+  position: absolute;
+  background: var(--cor-5);
+  width: 10px;
+  height: 10px;
+  top: 16px;
+  left: -20px;
+  border-radius: 100%;
+  border: 1px solid var(--cor-8);
+}
+
+.faq__lista-resposta {
+  margin-bottom: 20px;
+}
+
+[data-anime="accordion"] .faq__lista-pergunta {
+  position: relative;
+}
+[data-anime="accordion"] .faq__lista-pergunta::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  width: 16px;
+  height: 16px;
+  background-image: url(../../img/icons/seta-direita.png);
+  background-size: cover;
+  margin-left: 10px;
+}
+
+[data-anime="accordion"] .faq__lista-pergunta.ativo::after {
+  content: "";
+  background-image: url(../../img/icons/seta-baixo.png);
+}
+
+[data-anime="accordion"] .faq__lista-resposta {
+  display: none;
+}
+
+[data-anime="accordion"] .faq__lista-resposta.ativo {
+  display: block;
+  animation: slideDown 0.5s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    max-height: 0px;
+    opacity: 0;
+  }
+
+  to {
+    max-height: 300px;
+    opacity: 1;
+  }
+}

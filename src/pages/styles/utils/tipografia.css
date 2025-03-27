@@ -1,0 +1,46 @@
+.font-1-hs {
+  font-family: "EB Garamond", serif;
+  font-size: 45px;
+  color: var(--cor-8);
+}
+
+.font-1-hsi {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.font-2-hs {
+  font-family: "EB Garamond", serif;
+  font-size: 40px;
+}
+
+.font-2-hn {
+  font-family: "Jost", sans-serif;
+  font-size: 40px;
+}
+
+.font-3-hn {
+  font-family: "Jost", sans-serif;
+  font-size: 30px;
+}
+
+.font-4-hn {
+  font-family: "Jost", sans-serif;
+  font-size: 25px;
+}
+
+.font-1-p {
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+}
+
+.font-2-p {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+}
+
+.font-3-p {
+  font-family: "Jost", sans-serif;
+  font-size: 15px;
+}

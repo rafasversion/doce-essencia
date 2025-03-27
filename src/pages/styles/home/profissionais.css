@@ -1,0 +1,39 @@
+.profissionais {
+  background: var(--cor-2);
+}
+
+.profissionais__container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 100px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+.profissional__card {
+  width: 250px;
+  text-align: center;
+}
+
+.profissional__card-imagem {
+  border-radius: 4px;
+  background-size: cover;
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 30px;
+}
+
+
+.profissional__card-redes {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.profissional__card-redes img {
+  width: 20px;
+  height: 20px;
+}

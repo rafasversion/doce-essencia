@@ -1,0 +1,29 @@
+{
+  "name": "curso_ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "node --watch --no-warnings server/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@fastify/cors": "^11.0.0",
+    "better-sqlite3": "^11.9.1",
+    "fastify": "^5.2.1",
+    "mysql": "^2.18.1",
+    "postgres": "^3.4.5",
+    "sqlite3": "^5.1.7",
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/mysql": "^2.15.26",
+    "dotenv": "^16.4.7"
+  }
+}

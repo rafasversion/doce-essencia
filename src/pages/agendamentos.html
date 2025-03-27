@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doce Essência</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <nav class="header__navegagacao">
+        <a class="header__navegacao-logo" href="/src/"><img src="./img/logo.svg" alt=""></a>
+        <ul class="navegacao__lista">
+          <li class="navegacao__item font-2-p"><a href="#procedimentos">Procedimentos</a></li>
+          <li class="navegacao__item font-2-p"><a href="#produtos">Produtos</a></li>
+          <li class="navegacao__item font-2-p"><a href="#profissionais">Profissionais</a></li>
+          <li class="navegacao__item font-2-p"><a href="#avaliacoes">Avaliações</a></li>
+          <li class="navegacao__item font-2-p"><a href="#contato">Contato</a></li>
+          <li class="navegacao__item font-2-p"><a href="#faq">Faq</a></li>
+        </ul>
+
+        <span class="header__status font-2-pb">Aberto agora</span>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-conteudo">
+      <div id="agendamentos-lista">
+        <table class="agendamentos-tabela" id="agendamentos-tabela">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Procedimento</th>
+              <th>Profissional</th>
+              <th>Data</th>
+              <th>Horário</th>
+            </tr>
+          </thead>
+
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__direitos">
+        <img class="footer__direitos-logo" src="./img/logo_footer.png" alt="">
+        <span class="footer__direitos-texto font-3-p cor-2">@ Todos direitos reservados</span>
+      </div>
+      <div class="footer__navegacao">
+        <ul class="footer__navegacao-lista">
+          <li class="footer__navegacao-item"><a class="font-1-p cor-0" href="#agendar">Agendar</a></li>
+          <li class="footer__navegacao-item"><a class="font-1-p cor-0" href="#procedimentos">Procedimentos</a></li>
+          <li class="footer__navegacao-item"><a class="font-1-p cor-0" href="#produtos">Produtos</a></li>
+          <li class="footer__navegacao-item"><a class="font-1-p cor-0" href="#profissionais">Profissionais</a></li>
+          <li class="footer__navegacao-item"><a class="font-1-p cor-0" href="#avaliacoes">Avaliações</a></li>
+          <li class="footer__navegacao-item"><a class="font-1-p cor-0" href="#faq">Faq</a></li>
+          <li class="footer__navegacao-item"><a class="font-1-p cor-0" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer__contatos">
+        <p class="footer__contatos-endereco font-1-p cor-0">Rua Algum lugar, Bairro Por Aí, 123 - Qualquer, NQN</p>
+        <div class="footer__social">
+          <ul class="footer__social-lista">
+            <li class="footer__social-item font-2-p cor-0"><a href=""><img src="./img/icons/instagram.svg" alt="">@instagram.com</a></li>
+            <li class="footer__social-item font-2-p cor-0"><a href=""><img src="./img/icons/facebook.svg" alt="">
+                <span>pagina.com</span></a></li>
+            <li class="footer__social-item font-2-p cor-0"><a href=""><img src="./img/icons/whatsapp.svg" alt="">9999-999</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../../dist/index.js"></script>
+</body>
+
+</html>

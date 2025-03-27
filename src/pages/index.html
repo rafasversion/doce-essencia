@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doce Essência</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <nav class="header__navegagacao">
+        <a class="header__navegacao-logo" href="/src/"><img src="./img/logo.svg" alt=""></a>
+        <ul class="navegacao__lista">
+          <li class="navegacao__item font-2-p"><a href="#procedimentos">Procedimentos</a></li>
+          <li class="navegacao__item font-2-p"><a href="#produtos">Produtos</a></li>
+          <li class="navegacao__item font-2-p"><a href="#profissionais">Profissionais</a></li>
+          <li class="navegacao__item font-2-p"><a href="#avaliacoes">Avaliações</a></li>
+          <li class="navegacao__item font-2-p"><a href="#contato">Contato</a></li>
+          <li class="navegacao__item font-2-p"><a href="#faq">Faq</a></li>
+        </ul>
+
+        <span class="header__status font-2-pb">Aberto agora</span>
+      </nav>
+    </div>
+  </header>
+
+
+  <main class="conteudo__principal" id="procedimentos">
+    <div class="conteudo__principal-content">
+      <div class="conteudo__principal-info">
+        <div class="info__content">
+          <h1 class="info__content-titulo font-1-hs">Realce sua<br><span class="font-1-hsi">beleza</span> com nossos<br> procedimentos<br> e brilhe<br> intensamente!</h1>
+          <p class="info__content-texto font-2-p">Conheça os melhores procedimentos de beleza em lugar só!</p>
+          <a class="info__content-botao font-2-p" href="./agendar.html">Agende um horário</a>
+        </div>
+      </div>
+
+      <div class="carrossel">
+        <div class="carrossel__container js-tabMenu">
+          <img class="carrossel__container-imagem ativo" src="./img/procedimentos/maquiagem.jpg" alt="">
+          <img class="carrossel__container-imagem" src="./img/procedimentos/cabelo.jpg" alt="">
+          <img class="carrossel__container-imagem" src="./img/procedimentos/unha.jpg" alt="">
+          <img class="carrossel__container-imagem" src="./img/procedimentos/sombrancelha.jpg" alt="">
+          <img class="carrossel__container-imagem" src="./img/procedimentos/depilacao.png" alt="">
+          <img class="carrossel__container-imagem" src="./img/procedimentos/massagem.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="procedimentos js-tabContent">
+        <div class="procedimentos__wrapper">
+          <div class="procedimentos__card font-2-p ativo" data-index="0">
+            <p>Lorem ipsum dolor sit amet consectetur maquiagem elit dictum molestie.</p>
+          </div>
+          <div class="procedimentos__card font-2-p" data-index="1">
+            <p>Lorem ipsum dolor sit amet consectetur cabelis adipiscing elit dictum molestie.</p>
+          </div>
+          <div class="procedimentos__card font-2-p" data-index="2">
+            <p>Lorem ipsum dolor sit amet consectetur. Unhis donec elit dictum molestie.</p>
+          </div>
+          <div class="procedimentos__card font-2-p" data-index="3">
+            <p>Lorem ipsum dolor sit amet consectetur maquiagem elit dictum molestie.</p>
+          </div>
+          <div class="procedimentos__card font-2-p" data-index="4">
+            <p>Lorem ipsum dolor sit amet consectetur cabelis adipiscing elit dictum molestie.</p>
+          </div>
+          <div class="procedimentos__card font-2-p" data-index="5">
+            <p>Lorem ipsum dolor sit amet consectetur. Unhis donec elit dictum molestie.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <section class="produtos" id="produtos">
+    <h2 class="produtos__titulo font-2-hs">Trabalhamos com os melhores produtos para sempre entregar os melhores resultados!</h2>
+    <button class="produtos__botao-prev"><img src="./img/icons/arrow-white.png" alt=""></button>
+    <button class="produtos__botao-next"><img src="./img/icons/arrow-white.png" alt=""></button>
+    <div class="produtos__container">
+      <div class="produto__card">
+        <div class="produto__card-imagem">
+          <img src="./img/produtos/curology.jpg" alt="">
+        </div>
+        <div class="produto__card-info">
+          <h2 class="produto__card-nome font-3-hn">Linha Arvensis</h2>
+        </div>
+      </div>
+      <div class="produto__card">
+        <div class="produto__card-imagem">
+          <img src="./img/produtos/glossier.jpg" alt="">
+        </div>
+        <div class="produto__card-info">
+          <h2 class="produto__card-nome font-3-hn">Linha Arvensis</h2>
+        </div>
+      </div>
+      <div class="produto__card">
+        <div class="produto__card-imagem">
+          <img src="./img/produtos/kadarius.jpg" alt="">
+        </div>
+        <div class="produto__card-info">
+          <h2 class="produto__card-nome font-3-hn">Linha Arvensis</h2>
+        </div>
+      </div>
+      <div class="produto__card">
+        <div class="produto__card-imagem">
+          <img src="./img/produtos/lancome.jpg" alt="">
+        </div>
+        <div class="produto__card-info">
+          <h2 class="produto__card-nome font-3-hn">Linha Arvensis</h2>
+        </div>
+      </div>
+      <div class="produto__card">
+        <div class="produto__card-imagem">
+          <img src="./img/produtos/necessaire.jpg" alt="">
+        </div>
+        <div class="produto__card-info">
+          <h2 class="produto__card-nome font-3-hn">Linha Arvensis</h2>
+        </div>
+      </div>
+      <div class="produto__card">
+        <div class="produto__card-imagem">
+          <img src="./img/produtos/ordinary.jpg" alt="">
+        </div>
+        <div class="produto__card-info">
+          <h2 class="produto__card-nome font-3-hn">Linha Arvensis</h2>
+        </div>
+      </div>
+      <div class="produto__card">
+        <div class="produto__card-imagem">
+          <img src="./img/produtos/arvensis.png" alt="">
+        </div>
+        <div class="produto__card-info">
+          <h2 class="produto__card-nome font-3-hn">Linha Arvensis</h2>
+        </div>
+      </div>
+      <div class="produto__card">
+        <div class="produto__card-imagem">
+          <img src="./img/produtos/arvensis.png" alt="">
+        </div>
+        <div class="produto__card-info">
+          <h2 class="produto__card-nome font-3-hn">Linha Arvensis</h2>
+        </div>
+      </div>
+      <div class="produto__card">
+        <div class="produto__card-imagem">
+          <img src="./img/produtos/arvensis.png" alt="">
+        </div>
+        <div class="produto__card-info">
+          <h2 class="produto__card-nome font-3-hn">Linha Arvensis</h2>
+        </div>
+      </div>
+      <div class="produto__card">
+        <div class="produto__card-imagem">
+          <img src="./img/produtos/arvensis.png" alt="">
+        </div>
+        <div class="produto__card-info">
+          <h2 class="produto__card-nome font-3-hn">Linha Arvensis</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="profissionais" id="profissionais">
+    <div class="profissionais__container">
+      <div class="profissional__card">
+        <img class="profissional__card-imagem" src="./img/profissionais/cabeleleira.jpg" alt="">
+        <h3 class="profissional__card-nome font-3-hn">Fulana da Silva</h3>
+        <span class="profissional__card-profissao font-3-p cor-4">Cabeleleira</span>
+        <div class="profissional__card-redes">
+          <a href=""><img src="./img/icons/instagram-p.png" alt=""></a>
+          <a href=""><img src="./img/icons/facebook-p.png" alt=""></a>
+          <a href=""><img src="./img/icons/whatsapp-p.png" alt=""></a>
+        </div>
+      </div>
+      <div class="profissional__card">
+        <img class="profissional__card-imagem" src="./img/profissionais/cabeleleira.jpg" alt="">
+        <h3 class="profissional__card-nome font-3-hn">Fulana da Silva</h3>
+        <span class="profissional__card-profissao font-3-p cor-4">Cabeleleira</span>
+        <div class="profissional__card-redes">
+          <a href=""><img src="./img/icons/instagram-p.png" alt=""></a>
+          <a href=""><img src="./img/icons/facebook-p.png" alt=""></a>
+          <a href=""><img src="./img/icons/whatsapp-p.png" alt=""></a>
+        </div>
+      </div>
+      <div class="profissional__card">
+        <img class="profissional__card-imagem" src="./img/profissionais/cabeleleira.jpg" alt="">
+        <h3 class="profissional__card-nome font-3-hn">Fulana da Silva</h3>
+        <span class="profissional__card-profissao font-3-p cor-4">Cabeleleira</span>
+        <div class="profissional__card-redes">
+          <a href=""><img src="./img/icons/instagram-p.png" alt=""></a>
+          <a href=""><img src="./img/icons/facebook-p.png" alt=""></a>
+          <a href=""><img src="./img/icons/whatsapp-p.png" alt=""></a>
+        </div>
+      </div>
+      <div class="profissional__card">
+        <img class="profissional__card-imagem" src="./img/profissionais/cabeleleira.jpg" alt="">
+        <h3 class="profissional__card-nome font-3-hn">Fulana da Silva</h3>
+        <span class="profissional__card-profissao font-3-p cor-4">Cabeleleira</span>
+        <div class="profissional__card-redes">
+          <a href=""><img src="./img/icons/instagram-p.png" alt=""></a>
+          <a href=""><img src="./img/icons/facebook-p.png" alt=""></a>
+          <a href=""><img src="./img/icons/whatsapp-p.png" alt=""></a>
+        </div>
+      </div>
+      <div class="profissional__card">
+        <img class="profissional__card-imagem" src="./img/profissionais/cabeleleira.jpg" alt="">
+        <h3 class="profissional__card-nome font-3-hn">Fulana da Silva</h3>
+        <span class="profissional__card-profissao font-3-p cor-4">Cabeleleira</span>
+        <div class="profissional__card-redes">
+          <a href=""><img src="./img/icons/instagram-p.png" alt=""></a>
+          <a href=""><img src="./img/icons/facebook-p.png" alt=""></a>
+          <a href=""><img src="./img/icons/whatsapp-p.png" alt=""></a>
+        </div>
+      </div>
+      <div class="profissional__card">
+        <img class="profissional__card-imagem" src="./img/profissionais/cabeleleira.jpg" alt="">
+        <h3 class="profissional__card-nome font-3-hn">Fulana da Silva</h3>
+        <span class="profissional__card-profissao font-3-p cor-4">Cabeleleira</span>
+        <div class="profissional__card-redes">
+          <a href=""><img src="./img/icons/instagram-p.png" alt=""></a>
+          <a href=""><img src="./img/icons/facebook-p.png" alt=""></a>
+          <a href=""><img src="./img/icons/whatsapp-p.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="avaliacoes" id="avaliacoes">
+    <div class="avaliacoes__container">
+      <div class="avaliacoes__header">
+        <h2 class="avaliacoes__header-titulo font-2-hs">Avaliações de Clientes</h3>
+          <a class="avaliacoes__header-botao font-2-p cor-9" href="">Avalie</a>
+      </div>
+      <div class="avaliacoes__estatisticas">
+        <div class="avaliacoes__score">
+          <h3>4.8</h3>
+          <span class="font-3-p cor-4"><img src="./img/icons/cinco_estrelas.png" alt=""> (2000 avaliações)</span>
+        </div>
+        <div class="avaliacoes__estrelas">
+          <div class="cinco__estrelas font-3-p cor-4"></div>
+          <div class="quatro__estrelas font-3-p cor-4"></div>
+          <div class="tres__estrelas font-3-p cor-4"></div>
+        </div>
+
+        <div class="avaliacoes__estrelas">
+          <div class="duas__estrelas font-3-p cor-4"></div>
+          <div class="uma__estrelas font-3-p cor-4"></div>
+        </div>
+      </div>
+      <div class="avaliacoes__cards">
+        <div class="avaliacao__card">
+          <h3 class="avaliacao__card-titulo font-3-hn">Lorem, ipsum dolor sit amet</h3>
+          <img class="avaliacao__card-estrelas" src="./img/icons/cinco_estrelas.png" alt="">
+          <p class="avaliacao__card-texto font-2-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero hic beatae eligendi! Rerum nemo non minus, ipsam soluta accusamus vero totam quasi necessitatibus! Id at, rem illum aperiam maiores vero!</p>
+          <p class="avaliacao__card-autor font-3-p">Fulana da Silva</p>
+          <span class="avaliacao__card-data font-3-p cor-4">18 de março de 2025</span>
+        </div>
+
+        <div class="avaliacao__card">
+          <h3 class="avaliacao__card-titulo font-3-hn">Lorem, ipsum dolor sit amet</h3>
+          <img class="avaliacao__card-estrelas" src="./img/icons/quatro_estrelas.png" alt="">
+          <p class="avaliacao__card-texto font-2-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero hic beatae eligendi! Rerum nemo non minus, ipsam soluta accusamus vero totam quasi necessitatibus! Id at, rem illum aperiam maiores vero!</p>
+          <p class="avaliacao__card-autor font-3-p">Fulana da Silva</p>
+          <span class="avaliacao__card-data font-3-p cor-4">5 de março de 2025</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contatos" id="contato">
+    <div class="contatos__container">
+      <h2 class="contatos__container-titulo font-2-hs">Entre em contato para tirar dúvidas</h2>
+      <div class="contatos__cards">
+        <div class="contato__card">
+          <img class="contato__card-icone" src="./img/icons/chat-support.svg" alt="">
+          <h4 class="contato__card-titulo font-4-hn">Chat de Suporte</h4>
+          <a class="contato__card-botao font-1-p cor-0">Iniciar chat</a>
+        </div>
+        <div class="contato__card">
+          <img class="contato__card-icone" src="./img/icons/mapa.svg" alt="">
+          <h4 class="contato__card-titulo font-4-hn">Visite-nos</h4>
+          <a class="contato__card-botao font-1-p cor-0" href="">Abrir localização</a>
+        </div>
+        <div class="contato__card">
+          <img class="contato__card-icone" src="./img/icons/telefone.svg" alt="">
+          <h4 class="contato__card-titulo font-4-hn">Faça uma chamada</h4>
+          <a class="contato__card-botao font-1-p cor-0" href="">Ligar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="faq__container">
+      <h2 class="faq__container-titulo font-2-hs">Perguntas frequentes</h2>
+      <dl class="faq__lista" data-anime="accordion">
+        <dt class="faq__lista-pergunta font-3-hn">Lorem ipsum dolor sit amet</dt>
+        <dd class="faq__lista-resposta font-2-p cor-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eius reprehenderit delectus aliquam omnis iste Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eius reprehenderit delectus aliquam omnis iste</dd>
+        <dt class="faq__lista-pergunta font-3-hn">Lorem ipsum dolor sit amet</dt>
+        <dd class="faq__lista-resposta font-2-p cor-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eius reprehenderit delectus aliquam omnis iste Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eius reprehenderit delectus aliquam omnis iste</dd>
+        <dt class="faq__lista-pergunta font-3-hn">Lorem ipsum dolor sit amet</dt>
+        <dd class="faq__lista-resposta font-2-p cor-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eius reprehenderit delectus aliquam omnis iste Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eius reprehenderit delectus aliquam omnis iste</dd>
+        <dt class="faq__lista-pergunta font-3-hn">Lorem ipsum dolor sit amet</dt>
+        <dd class="faq__lista-resposta font-2-p cor-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eius reprehenderit delectus aliquam omnis iste Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eius reprehenderit delectus aliquam omnis iste</dd>
+        <dt class="faq__lista-pergunta font-3-hn">Lorem ipsum dolor sit amet</dt>
+        <dd class="faq__lista-resposta font-2-p cor-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eius reprehenderit delectus aliquam omnis iste Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eius reprehenderit delectus aliquam omnis iste</dd>
+        <dt class="faq__lista-pergunta font-3-hn">Lorem ipsum dolor sit amet</dt>
+        <dd class="faq__lista-resposta font-2-p cor-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eius reprehenderit delectus aliquam omnis iste Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eius reprehenderit delectus aliquam omnis iste</dd>
+      </dl>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__direitos">
+        <img class="footer__direitos-logo" src="./img/logo_footer.png" alt="">
+        <span class="footer__direitos-texto font-3-p cor-2">@ Todos direitos reservados</span>
+      </div>
+      <div class="footer__navegacao">
+        <ul class="footer__navegacao-lista">
+          <li class="footer__navegacao-item"><a class="font-1-p cor-0" href="#agendar">Agendar</a></li>
+          <li class="footer__navegacao-item"><a class="font-1-p cor-0" href="#procedimentos">Procedimentos</a></li>
+          <li class="footer__navegacao-item"><a class="font-1-p cor-0" href="#produtos">Produtos</a></li>
+          <li class="footer__navegacao-item"><a class="font-1-p cor-0" href="#profissionais">Profissionais</a></li>
+          <li class="footer__navegacao-item"><a class="font-1-p cor-0" href="#avaliacoes">Avaliações</a></li>
+          <li class="footer__navegacao-item"><a class="font-1-p cor-0" href="#faq">Faq</a></li>
+          <li class="footer__navegacao-item"><a class="font-1-p cor-0" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer__contatos">
+        <p class="footer__contatos-endereco font-1-p cor-0">Rua Algum lugar, Bairro Por Aí, 123 - Qualquer, NQN</p>
+        <div class="footer__social">
+          <ul class="footer__social-lista">
+            <li class="footer__social-item font-2-p cor-0"><a href=""><img src="./img/icons/instagram.svg" alt="">@instagram.com</a></li>
+            <li class="footer__social-item font-2-p cor-0"><a href=""><img src="./img/icons/facebook.svg" alt="">
+                <span>pagina.com</span></a></li>
+            <li class="footer__social-item font-2-p cor-0"><a href=""><img src="./img/icons/whatsapp.svg" alt="">9999-999</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../../dist/index.js"></script>
+</body>
+
+</html>

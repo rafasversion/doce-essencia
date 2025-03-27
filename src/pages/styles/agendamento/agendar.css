@@ -1,0 +1,84 @@
+.agendamento {
+  background: #f5f5f5;
+}
+
+.agendamento__formulario-container h2 {
+  font-family: "EB Garamond", serif;
+  font-size: 45px;
+  margin-bottom: 40px;
+  color: #141414;
+}
+
+.agendamento__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+.agendamento__background {
+  height: 700px;
+  width: 480px;
+}
+
+.agendamento__formulario label {
+  display: block;
+}
+
+.agendamento__formulario-container {
+  background: #fff;
+  width: 800px;
+  height: 595px;
+  padding: 50px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.agendamento__formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.agendamento__formulario label {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.agendamento__formulario input,
+select {
+  margin-bottom: 30px;
+  border-radius: 4px;
+  border: 2px solid #9b9b9b;
+  height: 40px;
+  width: 300px;
+  padding: 10px;
+}
+
+.agendamento__formulario select {
+  height: 40px;
+  width: 300px;
+  color: #000;
+}
+
+.btn-agendar {
+  margin-top: 20px;
+  margin-right: 47px;
+  justify-self: right;
+  grid-column: 2;
+  background: #6e2f96;
+  display: block;
+  width: 160px;
+  height: 40px;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-agendar:hover {
+  background: #d400bf;
+
+}

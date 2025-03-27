@@ -1,0 +1,22 @@
+.agendamentos-tabela {
+  width: 1280px;
+  text-align: left;
+  border-radius: 4px;
+  border: 1px solid #c5c2c2;
+  border-collapse: separate; /* Permite arredondamento */
+  border-spacing: 0;
+  overflow: hidden;
+}
+
+.agendamentos-tabela th {
+  background: #fff;
+}
+
+.agendamentos-tabela th, td {
+  border-bottom: 1px solid #c5c2c2;
+  padding: 10px;
+}
+
+.agendamentos-tabela tbody tr:last-of-type{
+  border-bottom: none;
+}

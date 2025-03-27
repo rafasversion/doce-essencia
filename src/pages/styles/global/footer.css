@@ -1,0 +1,68 @@
+.footer {
+  background: var(--cor-8);
+}
+
+.footer__container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer__direitos-logo {
+  width: 200px;
+}
+
+.footer__direitos-texto {
+  margin-left: 10px;
+}
+
+.footer__navegacao-item {
+  margin-bottom: 10px;
+}
+
+.footer__navegacao-item a {
+  text-decoration: none;
+  position: relative;
+}
+
+.footer__navegacao-item a:hover {
+  color: var(--cor-6);
+}
+
+.footer__navegacao-item a::before {
+  content: "";
+  position: absolute;
+  background: var(--cor-5);
+  width: 5px;
+  height: 5px;
+  top: 12px;
+  left: -25px;
+  border-radius: 100%;
+  border: 1px solid var(--cor-9);
+}
+
+.footer__contatos-endereco {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.footer__social-item a {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  align-items: center;
+}
+
+.footer__social-item a:hover {
+  color: var(--cor-6);
+}
+
+.footer__social-item img{
+  width: 25px;
+  height: 25px;
+}

@@ -1,0 +1,48 @@
+.contatos {
+  background: var(--cor-2);
+}
+
+.contatos__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.contatos__container-titulo {
+  margin-bottom: 60px;
+}
+
+.contatos__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contato__card {
+  width: 300px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 4px;
+  background: var(--cor-1);
+  filter: drop-shadow(0 0 0.1rem var(--cor-3));
+}
+
+.contato__card-icone {
+  width: 100%;
+  max-width: 40px;
+  height: 40px;
+  margin-bottom: 60px;
+}
+
+.contato__card-titulo {
+  margin-bottom: 25px;
+}
+
+.contato__card-botao {
+  background: var(--cor-7);
+  padding: 10px 20px;
+  display: block;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+}
