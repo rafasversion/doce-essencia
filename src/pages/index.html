@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Doce Essência</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" href="./img/brand.svg" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/style.css">
@@ -16,6 +17,11 @@
     <div class="header__container">
       <nav class="header__navegagacao">
         <a class="header__navegacao-logo" href="/src/"><img src="./img/logo.svg" alt=""></a>
+        <button class="header__hamburguer" id="hamburguer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <ul class="navegacao__lista">
           <li class="navegacao__item font-2-p"><a href="#procedimentos">Procedimentos</a></li>
           <li class="navegacao__item font-2-p"><a href="#produtos">Produtos</a></li>
@@ -24,18 +30,16 @@
           <li class="navegacao__item font-2-p"><a href="#contato">Contato</a></li>
           <li class="navegacao__item font-2-p"><a href="#faq">Faq</a></li>
         </ul>
-
         <span class="header__status font-2-pb">Aberto agora</span>
       </nav>
     </div>
   </header>
 
-
   <main class="conteudo__principal" id="procedimentos">
     <div class="conteudo__principal-content">
       <div class="conteudo__principal-info">
         <div class="info__content">
-          <h1 class="info__content-titulo font-1-hs">Realce sua<br><span class="font-1-hsi">beleza</span> com nossos<br> procedimentos<br> e brilhe<br> intensamente!</h1>
+          <h1 class="info__content-titulo font-1-hs">Realce sua <br><span class="font-1-hsi">beleza</span> com nossos<br> procedimentos<br> e brilhe<br> intensamente!</h1>
           <p class="info__content-texto font-2-p">Conheça os melhores procedimentos de beleza em lugar só!</p>
           <a class="info__content-botao font-2-p" href="./agendar.html">Agende um horário</a>
         </div>
@@ -55,28 +59,27 @@
       <div class="procedimentos js-tabContent">
         <div class="procedimentos__wrapper">
           <div class="procedimentos__card font-2-p ativo" data-index="0">
-            <p>Lorem ipsum dolor sit amet consectetur maquiagem elit dictum molestie.</p>
+            <p>Maquiagem profissional para realçar sua beleza natural, seja para o dia a dia ou ocasiões especiais.</p>
           </div>
           <div class="procedimentos__card font-2-p" data-index="1">
-            <p>Lorem ipsum dolor sit amet consectetur cabelis adipiscing elit dictum molestie.</p>
+            <p>Corte, coloração e tratamentos capilares feitos por especialistas para cabelos saudáveis e cheios de brilho.</p>
           </div>
           <div class="procedimentos__card font-2-p" data-index="2">
-            <p>Lorem ipsum dolor sit amet consectetur. Unhis donec elit dictum molestie.</p>
+            <p>Manicure e pedicure com acabamento impecável, unhas em gel, fibra e nail art personalizada.</p>
           </div>
           <div class="procedimentos__card font-2-p" data-index="3">
-            <p>Lorem ipsum dolor sit amet consectetur maquiagem elit dictum molestie.</p>
+            <p>Design de sobrancelha com henna, micropigmentação e brow lamination para um olhar marcante.</p>
           </div>
           <div class="procedimentos__card font-2-p" data-index="4">
-            <p>Lorem ipsum dolor sit amet consectetur cabelis adipiscing elit dictum molestie.</p>
+            <p>Depilação com cera quente, linha e laser para uma pele lisinha e livre de pelos por mais tempo.</p>
           </div>
           <div class="procedimentos__card font-2-p" data-index="5">
-            <p>Lorem ipsum dolor sit amet consectetur. Unhis donec elit dictum molestie.</p>
+            <p>Massagens relaxantes e modeladoras para aliviar tensões, reduzir medidas e renovar as energias.</p>
           </div>
         </div>
       </div>
     </div>
   </main>
-
 
   <section class="produtos" id="produtos">
     <h2 class="produtos__titulo font-2-hs">Trabalhamos com os melhores produtos para sempre entregar os melhores resultados!</h2>
@@ -88,7 +91,7 @@
           <img src="./img/produtos/curology.jpg" alt="">
         </div>
         <div class="produto__card-info">
-          <h2 class="produto__card-nome font-3-hn">Linha Arvensis</h2>
+          <h2 class="produto__card-nome font-3-hn">Linha Curology</h2>
         </div>
       </div>
       <div class="produto__card">
@@ -96,7 +99,7 @@
           <img src="./img/produtos/glossier.jpg" alt="">
         </div>
         <div class="produto__card-info">
-          <h2 class="produto__card-nome font-3-hn">Linha Arvensis</h2>
+          <h2 class="produto__card-nome font-3-hn">Glossier Skin</h2>
         </div>
       </div>
       <div class="produto__card">
@@ -104,7 +107,7 @@
           <img src="./img/produtos/kadarius.jpg" alt="">
         </div>
         <div class="produto__card-info">
-          <h2 class="produto__card-nome font-3-hn">Linha Arvensis</h2>
+          <h2 class="produto__card-nome font-3-hn">Sérum Kadarius</h2>
         </div>
       </div>
       <div class="produto__card">
@@ -112,7 +115,7 @@
           <img src="./img/produtos/lancome.jpg" alt="">
         </div>
         <div class="produto__card-info">
-          <h2 class="produto__card-nome font-3-hn">Linha Arvensis</h2>
+          <h2 class="produto__card-nome font-3-hn">Lancôme Rouge</h2>
         </div>
       </div>
       <div class="produto__card">
@@ -120,7 +123,7 @@
           <img src="./img/produtos/necessaire.jpg" alt="">
         </div>
         <div class="produto__card-info">
-          <h2 class="produto__card-nome font-3-hn">Linha Arvensis</h2>
+          <h2 class="produto__card-nome font-3-hn">Nécessaire Body</h2>
         </div>
       </div>
       <div class="produto__card">
@@ -128,7 +131,7 @@
           <img src="./img/produtos/ordinary.jpg" alt="">
         </div>
         <div class="produto__card-info">
-          <h2 class="produto__card-nome font-3-hn">Linha Arvensis</h2>
+          <h2 class="produto__card-nome font-3-hn">The Ordinary</h2>
         </div>
       </div>
       <div class="produto__card">
@@ -139,40 +142,16 @@
           <h2 class="produto__card-nome font-3-hn">Linha Arvensis</h2>
         </div>
       </div>
-      <div class="produto__card">
-        <div class="produto__card-imagem">
-          <img src="./img/produtos/arvensis.png" alt="">
-        </div>
-        <div class="produto__card-info">
-          <h2 class="produto__card-nome font-3-hn">Linha Arvensis</h2>
-        </div>
-      </div>
-      <div class="produto__card">
-        <div class="produto__card-imagem">
-          <img src="./img/produtos/arvensis.png" alt="">
-        </div>
-        <div class="produto__card-info">
-          <h2 class="produto__card-nome font-3-hn">Linha Arvensis</h2>
-        </div>
-      </div>
-      <div class="produto__card">
-        <div class="produto__card-imagem">
-          <img src="./img/produtos/arvensis.png" alt="">
-        </div>
-        <div class="produto__card-info">
-          <h2 class="produto__card-nome font-3-hn">Linha Arvensis</h2>
-        </div>
-      </div>
+
     </div>
   </section>
-
 
   <section class="profissionais" id="profissionais">
     <div class="profissionais__container">
       <div class="profissional__card">
         <img class="profissional__card-imagem" src="./img/profissionais/cabeleleira.jpg" alt="">
-        <h3 class="profissional__card-nome font-3-hn">Fulana da Silva</h3>
-        <span class="profissional__card-profissao font-3-p cor-4">Cabeleleira</span>
+        <h3 class="profissional__card-nome font-3-hn">Camila Ferreira</h3>
+        <span class="profissional__card-profissao font-3-p cor-4">Cabeleireira</span>
         <div class="profissional__card-redes">
           <a href=""><img src="./img/icons/instagram-p.png" alt=""></a>
           <a href=""><img src="./img/icons/facebook-p.png" alt=""></a>
@@ -180,9 +159,9 @@
         </div>
       </div>
       <div class="profissional__card">
-        <img class="profissional__card-imagem" src="./img/profissionais/cabeleleira.jpg" alt="">
-        <h3 class="profissional__card-nome font-3-hn">Fulana da Silva</h3>
-        <span class="profissional__card-profissao font-3-p cor-4">Cabeleleira</span>
+        <img class="profissional__card-imagem" src="./img/profissionais/maquiadora.jpg" alt="">
+        <h3 class="profissional__card-nome font-3-hn">Juliana Rocha</h3>
+        <span class="profissional__card-profissao font-3-p cor-4">Maquiadora</span>
         <div class="profissional__card-redes">
           <a href=""><img src="./img/icons/instagram-p.png" alt=""></a>
           <a href=""><img src="./img/icons/facebook-p.png" alt=""></a>
@@ -190,9 +169,9 @@
         </div>
       </div>
       <div class="profissional__card">
-        <img class="profissional__card-imagem" src="./img/profissionais/cabeleleira.jpg" alt="">
-        <h3 class="profissional__card-nome font-3-hn">Fulana da Silva</h3>
-        <span class="profissional__card-profissao font-3-p cor-4">Cabeleleira</span>
+        <img class="profissional__card-imagem" src="./img/profissionais/manicure.jpg" alt="">
+        <h3 class="profissional__card-nome font-3-hn">Beatriz Lima</h3>
+        <span class="profissional__card-profissao font-3-p cor-4">Manicure</span>
         <div class="profissional__card-redes">
           <a href=""><img src="./img/icons/instagram-p.png" alt=""></a>
           <a href=""><img src="./img/icons/facebook-p.png" alt=""></a>
@@ -200,9 +179,9 @@
         </div>
       </div>
       <div class="profissional__card">
-        <img class="profissional__card-imagem" src="./img/profissionais/cabeleleira.jpg" alt="">
-        <h3 class="profissional__card-nome font-3-hn">Fulana da Silva</h3>
-        <span class="profissional__card-profissao font-3-p cor-4">Cabeleleira</span>
+        <img class="profissional__card-imagem" src="./img/profissionais/designer-sobrancelha.jpg" alt="">
+        <h3 class="profissional__card-nome font-3-hn">Renata Souza</h3>
+        <span class="profissional__card-profissao font-3-p cor-4">Designer de Sobrancelhas</span>
         <div class="profissional__card-redes">
           <a href=""><img src="./img/icons/instagram-p.png" alt=""></a>
           <a href=""><img src="./img/icons/facebook-p.png" alt=""></a>
@@ -210,9 +189,9 @@
         </div>
       </div>
       <div class="profissional__card">
-        <img class="profissional__card-imagem" src="./img/profissionais/cabeleleira.jpg" alt="">
-        <h3 class="profissional__card-nome font-3-hn">Fulana da Silva</h3>
-        <span class="profissional__card-profissao font-3-p cor-4">Cabeleleira</span>
+        <img class="profissional__card-imagem" src="./img/profissionais/esteticista.jpg" alt="">
+        <h3 class="profissional__card-nome font-3-hn">Larissa Mendes</h3>
+        <span class="profissional__card-profissao font-3-p cor-4">Esteticista</span>
         <div class="profissional__card-redes">
           <a href=""><img src="./img/icons/instagram-p.png" alt=""></a>
           <a href=""><img src="./img/icons/facebook-p.png" alt=""></a>
@@ -220,9 +199,9 @@
         </div>
       </div>
       <div class="profissional__card">
-        <img class="profissional__card-imagem" src="./img/profissionais/cabeleleira.jpg" alt="">
-        <h3 class="profissional__card-nome font-3-hn">Fulana da Silva</h3>
-        <span class="profissional__card-profissao font-3-p cor-4">Cabeleleira</span>
+        <img class="profissional__card-imagem" src="./img/profissionais/massoterapeuta.jpg" alt="">
+        <h3 class="profissional__card-nome font-3-hn">Patrícia Alves</h3>
+        <span class="profissional__card-profissao font-3-p cor-4">Massoterapeuta</span>
         <div class="profissional__card-redes">
           <a href=""><img src="./img/icons/instagram-p.png" alt=""></a>
           <a href=""><img src="./img/icons/facebook-p.png" alt=""></a>
@@ -235,8 +214,8 @@
   <section class="avaliacoes" id="avaliacoes">
     <div class="avaliacoes__container">
       <div class="avaliacoes__header">
-        <h2 class="avaliacoes__header-titulo font-2-hs">Avaliações de Clientes</h3>
-          <a class="avaliacoes__header-botao font-2-p cor-9" href="">Avalie</a>
+        <h2 class="avaliacoes__header-titulo font-2-hs">Avaliações de Clientes</h2>
+        <a class="avaliacoes__header-botao font-2-p cor-9" href="">Avalie</a>
       </div>
       <div class="avaliacoes__estatisticas">
         <div class="avaliacoes__score">
@@ -248,7 +227,6 @@
           <div class="quatro__estrelas font-3-p cor-4"></div>
           <div class="tres__estrelas font-3-p cor-4"></div>
         </div>
-
         <div class="avaliacoes__estrelas">
           <div class="duas__estrelas font-3-p cor-4"></div>
           <div class="uma__estrelas font-3-p cor-4"></div>
@@ -256,21 +234,19 @@
       </div>
       <div class="avaliacoes__cards">
         <div class="avaliacao__card">
-          <h3 class="avaliacao__card-titulo font-3-hn">Lorem, ipsum dolor sit amet</h3>
+          <h3 class="avaliacao__card-titulo font-3-hn">Melhor salão que já fui!</h3>
           <img class="avaliacao__card-estrelas" src="./img/icons/cinco_estrelas.png" alt="">
-          <p class="avaliacao__card-texto font-2-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero hic beatae eligendi! Rerum nemo non minus, ipsam soluta accusamus vero totam quasi necessitatibus! Id at, rem illum aperiam maiores vero!</p>
-          <p class="avaliacao__card-autor font-3-p">Fulana da Silva</p>
+          <p class="avaliacao__card-texto font-2-p">Fiz o procedimento de hidratação capilar e saí com o cabelo completamente transformado. As profissionais são muito atenciosas, o ambiente é lindo e super aconchegante. Com certeza voltarei sempre!</p>
+          <p class="avaliacao__card-autor font-3-p">Fernanda Carvalho</p>
           <span class="avaliacao__card-data font-3-p cor-4">18 de março de 2025</span>
         </div>
-
         <div class="avaliacao__card">
-          <h3 class="avaliacao__card-titulo font-3-hn">Lorem, ipsum dolor sit amet</h3>
+          <h3 class="avaliacao__card-titulo font-3-hn">Atendimento impecável</h3>
           <img class="avaliacao__card-estrelas" src="./img/icons/quatro_estrelas.png" alt="">
-          <p class="avaliacao__card-texto font-2-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero hic beatae eligendi! Rerum nemo non minus, ipsam soluta accusamus vero totam quasi necessitatibus! Id at, rem illum aperiam maiores vero!</p>
-          <p class="avaliacao__card-autor font-3-p">Fulana da Silva</p>
+          <p class="avaliacao__card-texto font-2-p">Fiz design de sobrancelha com a Renata e ficou perfeito! Ela entendeu exatamente o que eu queria e o resultado superou minhas expectativas. O espaço é muito organizado e cheiroso. Recomendo demais!</p>
+          <p class="avaliacao__card-autor font-3-p">Isabela Martins</p>
           <span class="avaliacao__card-data font-3-p cor-4">5 de março de 2025</span>
         </div>
-
       </div>
     </div>
   </section>
@@ -302,18 +278,18 @@
     <div class="faq__container">
       <h2 class="faq__container-titulo font-2-hs">Perguntas frequentes</h2>
       <dl class="faq__lista" data-anime="accordion">
-        <dt class="faq__lista-pergunta font-3-hn">Lorem ipsum dolor sit amet</dt>
-        <dd class="faq__lista-resposta font-2-p cor-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eius reprehenderit delectus aliquam omnis iste Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eius reprehenderit delectus aliquam omnis iste</dd>
-        <dt class="faq__lista-pergunta font-3-hn">Lorem ipsum dolor sit amet</dt>
-        <dd class="faq__lista-resposta font-2-p cor-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eius reprehenderit delectus aliquam omnis iste Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eius reprehenderit delectus aliquam omnis iste</dd>
-        <dt class="faq__lista-pergunta font-3-hn">Lorem ipsum dolor sit amet</dt>
-        <dd class="faq__lista-resposta font-2-p cor-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eius reprehenderit delectus aliquam omnis iste Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eius reprehenderit delectus aliquam omnis iste</dd>
-        <dt class="faq__lista-pergunta font-3-hn">Lorem ipsum dolor sit amet</dt>
-        <dd class="faq__lista-resposta font-2-p cor-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eius reprehenderit delectus aliquam omnis iste Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eius reprehenderit delectus aliquam omnis iste</dd>
-        <dt class="faq__lista-pergunta font-3-hn">Lorem ipsum dolor sit amet</dt>
-        <dd class="faq__lista-resposta font-2-p cor-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eius reprehenderit delectus aliquam omnis iste Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eius reprehenderit delectus aliquam omnis iste</dd>
-        <dt class="faq__lista-pergunta font-3-hn">Lorem ipsum dolor sit amet</dt>
-        <dd class="faq__lista-resposta font-2-p cor-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eius reprehenderit delectus aliquam omnis iste Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eius reprehenderit delectus aliquam omnis iste</dd>
+        <dt class="faq__lista-pergunta font-3-hn">Como faço para agendar um horário?</dt>
+        <dd class="faq__lista-resposta font-2-p cor-4">Você pode agendar diretamente pelo nosso site clicando em "Agende um horário", pelo WhatsApp ou ligando para o nosso número.</dd>
+        <dt class="faq__lista-pergunta font-3-hn">Qual é a política de cancelamento?</dt>
+        <dd class="faq__lista-resposta font-2-p cor-4">Cancelamentos devem ser feitos com pelo menos 24 horas de antecedência para evitar cobrança de taxa. Em caso de reagendamento, aceitamos pedidos com até 12 horas antes do horário marcado.</dd>
+        <dt class="faq__lista-pergunta font-3-hn">Os produtos utilizados são seguros para pele sensível?</dt>
+        <dd class="faq__lista-resposta font-2-p cor-4">Sim! Trabalhamos com marcas reconhecidas e produtos dermatologicamente testados. Caso você tenha alguma alergia ou condição específica, informe ao agendar para que nossa equipe faça as adaptações necessárias.</dd>
+        <dt class="faq__lista-pergunta font-3-hn">Quanto tempo dura cada procedimento?</dt>
+        <dd class="faq__lista-resposta font-2-p cor-4">O tempo varia de acordo com o serviço escolhido. Procedimentos simples como design de sobrancelha levam em torno de 30 minutos, enquanto coloração e tratamentos capilares podem durar de 2 a 3 horas.</dd>
+        <dt class="faq__lista-pergunta font-3-hn">Vocês atendem por convênio ou plano de beleza?</dt>
+        <dd class="faq__lista-resposta font-2-p cor-4">No momento não trabalhamos com convênios, mas oferecemos pacotes especiais com desconto para clientes frequentes. Entre em contato para saber mais sobre nossas promoções e programas de fidelidade.</dd>
+        <dt class="faq__lista-pergunta font-3-hn">Quais formas de pagamento são aceitas?</dt>
+        <dd class="faq__lista-resposta font-2-p cor-4">Aceitamos dinheiro, PIX, cartões de débito e crédito (todas as bandeiras) e parcelamento em até 3x sem juros no cartão. Para pagamento via PIX, há 5% de desconto no valor total.</dd>
       </dl>
     </div>
   </section>
@@ -336,13 +312,12 @@
         </ul>
       </div>
       <div class="footer__contatos">
-        <p class="footer__contatos-endereco font-1-p cor-0">Rua Algum lugar, Bairro Por Aí, 123 - Qualquer, NQN</p>
+        <p class="footer__contatos-endereco font-1-p cor-0">Rua das Flores, 348 - Centro, Cascavel, PR</p>
         <div class="footer__social">
           <ul class="footer__social-lista">
-            <li class="footer__social-item font-2-p cor-0"><a href=""><img src="./img/icons/instagram.svg" alt="">@instagram.com</a></li>
-            <li class="footer__social-item font-2-p cor-0"><a href=""><img src="./img/icons/facebook.svg" alt="">
-                <span>pagina.com</span></a></li>
-            <li class="footer__social-item font-2-p cor-0"><a href=""><img src="./img/icons/whatsapp.svg" alt="">9999-999</a></li>
+            <li class="footer__social-item font-2-p cor-0"><a href=""><img src="./img/icons/instagram.svg" alt="">@doceessencia.studio</a></li>
+            <li class="footer__social-item font-2-p cor-0"><a href=""><img src="./img/icons/facebook.svg" alt=""><span>doceessencia.com.br</span></a></li>
+            <li class="footer__social-item font-2-p cor-0"><a href=""><img src="./img/icons/whatsapp.svg" alt="">(45) 99874-3210</a></li>
           </ul>
         </div>
       </div>

@@ -3,27 +3,23 @@ export default class Slide {
     prevButton;
     nextButton;
     constructor() {
-        this.container = [
-            ...document.querySelectorAll(".produtos__container"),
-        ];
+        this.container = document.querySelector(".produtos__container");
         this.prevButton = document.querySelector(".produtos__botao-prev");
         this.nextButton = document.querySelector(".produtos__botao-next");
     }
     activeNext() {
-        this.container.forEach((item) => {
-            const containerDimensios = item.getBoundingClientRect();
-            const containerWidth = containerDimensios.width;
-            this.nextButton?.addEventListener("click", () => {
-                item.scrollLeft += containerWidth;
+        this.nextButton?.addEventListener("click", () => {
+            this.container?.scrollBy({
+                left: 320,
+                behavior: "smooth",
             });
         });
     }
     activePrev() {
-        this.container.forEach((item) => {
-            const containerDimensios = item.getBoundingClientRect();
-            const containerWidth = containerDimensios.width;
-            this.prevButton?.addEventListener("click", () => {
-                item.scrollLeft -= containerWidth;
+        this.prevButton?.addEventListener("click", () => {
+            this.container?.scrollBy({
+                left: -320,
+                behavior: "smooth",
             });
         });
     }

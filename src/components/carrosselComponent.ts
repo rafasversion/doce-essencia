@@ -24,6 +24,13 @@ export default class CarouselScroll {
 
   public init(): void {
     this.calculateCardHeight();
+
+    if (window.innerWidth <= 768) {
+      this.unlockScroll();
+      this.updateActiveItem(0);
+      return;
+    }
+
     this.setupInitialState();
     this.containerStartPosition = this.container.offsetTop;
 
@@ -130,9 +137,10 @@ export default class CarouselScroll {
   }
 
   private updateCardsPosition(): void {
+    if (window.innerWidth <= 768) return;
+
     const offset = -this.currentIndex * this.cardHeight;
     this.cardsWrapper.style.transform = `translateY(${offset}px)`;
-    this.cardsWrapper.style.transition = 'transform 0.5s ease';
   }
 
   private scrollToContainer(): void {

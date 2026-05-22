@@ -80,5 +80,46 @@ select {
 
 .btn-agendar:hover {
   background: #d400bf;
+}
 
+@media (max-width: 1024px) {
+  .agendamento__container {
+    grid-template-columns: 1fr;
+    padding-top: 100px;
+  }
+
+  .agendamento__background {
+    display: none;
+  }
+
+  .agendamento__formulario-container {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin: 0 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 768px) {
+  .agendamento__formulario-container h2 {
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+
+  .agendamento__formulario {
+    grid-template-columns: 1fr;
+  }
+
+  .agendamento__formulario input,
+  .agendamento__formulario select {
+    width: 100%;
+  }
+
+  .btn-agendar {
+    grid-column: 1;
+    justify-self: stretch;
+    width: 100%;
+    margin-right: 0;
+  }
 }

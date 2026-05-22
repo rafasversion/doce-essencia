@@ -27,7 +27,7 @@ export default class Agendar {
         const data = document.getElementById('data').value;
         const horario = document.getElementById('horario').value;
         if (!nome_cliente || !telefone_cliente || !procedimento || !profissional || !data || !horario) {
-            alert('⚠️ Preencha todos os campos antes de enviar.');
+            alert('Preencha todos os campos antes de enviar.');
             return null;
         }
         return { nome_cliente, telefone_cliente, procedimento, profissional, data, horario };

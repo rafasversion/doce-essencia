@@ -21,6 +21,11 @@ export default class CarouselScroll {
     }
     init() {
         this.calculateCardHeight();
+        if (window.innerWidth <= 768) {
+            this.unlockScroll();
+            this.updateActiveItem(0);
+            return;
+        }
         this.setupInitialState();
         this.containerStartPosition = this.container.offsetTop;
         window.addEventListener('scroll', this.handleScroll.bind(this), { passive: false });
@@ -108,9 +113,10 @@ export default class CarouselScroll {
         this.scrollToContainer();
     }
     updateCardsPosition() {
+        if (window.innerWidth <= 768)
+            return;
         const offset = -this.currentIndex * this.cardHeight;
         this.cardsWrapper.style.transform = `translateY(${offset}px)`;
-        this.cardsWrapper.style.transition = 'transform 0.5s ease';
     }
     scrollToContainer() {
         if (this.isScrollLocked) {

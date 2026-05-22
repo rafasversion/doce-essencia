@@ -4,18 +4,28 @@
 
 .footer__container {
   margin: 0 auto;
-  max-width: 1200px;
-  padding: 100px 0;
+  max-width: 1400px;
+  padding: 100px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.footer__direitos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .footer__direitos-logo {
   width: 200px;
 }
 
-.footer__direitos-texto {
-  margin-left: 10px;
+.footer__navegacao-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer__navegacao-item {
@@ -25,6 +35,7 @@
 .footer__navegacao-item a {
   text-decoration: none;
   position: relative;
+  padding-left: 20px;
 }
 
 .footer__navegacao-item a:hover {
@@ -37,8 +48,9 @@
   background: var(--cor-5);
   width: 5px;
   height: 5px;
-  top: 12px;
-  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
   border-radius: 100%;
   border: 1px solid var(--cor-9);
 }
@@ -46,6 +58,12 @@
 .footer__contatos-endereco {
   font-size: 20px;
   margin-bottom: 40px;
+}
+
+.footer__social-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer__social-item a {
@@ -62,7 +80,53 @@
   color: var(--cor-6);
 }
 
-.footer__social-item img{
+.footer__social-item img {
   width: 25px;
   height: 25px;
+}
+
+@media (max-width: 1024px) {
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+    padding: 60px 20px;
+  }
+
+  .footer__direitos {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__container {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+    gap: 32px;
+  }
+
+  .footer__direitos {
+    grid-column: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: none;
+    padding-bottom: 0;
+    gap: 12px;
+  }
+
+  .footer__direitos-logo {
+    width: 150px;
+  }
+
+  .footer__contatos-endereco {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .footer__social-item a {
+    font-size: 16px;
+  }
 }

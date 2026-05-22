@@ -1,33 +1,30 @@
 export default class Slide {
-  container: HTMLElement[];
+  container: HTMLElement | null;
   prevButton: HTMLElement | null;
   nextButton: HTMLElement | null;
+
   constructor() {
-    this.container = [
-      ...document.querySelectorAll<HTMLElement>(".produtos__container"),
-    ];
-    this.prevButton = document.querySelector<HTMLElement>(".produtos__botao-prev");
-    this.nextButton = document.querySelector<HTMLElement>(".produtos__botao-next");
+    this.container = document.querySelector(".produtos__container");
+
+    this.prevButton = document.querySelector(".produtos__botao-prev");
+
+    this.nextButton = document.querySelector(".produtos__botao-next");
   }
 
   activeNext(): void {
-    this.container.forEach((item) => {
-      const containerDimensios = item.getBoundingClientRect();
-      const containerWidth = containerDimensios.width;
-
-      this.nextButton?.addEventListener("click", () => {
-        item.scrollLeft += containerWidth;
+    this.nextButton?.addEventListener("click", () => {
+      this.container?.scrollBy({
+        left: 320,
+        behavior: "smooth",
       });
     });
   }
 
   activePrev(): void {
-    this.container.forEach((item) => {
-      const containerDimensios = item.getBoundingClientRect();
-      const containerWidth = containerDimensios.width;
-
-      this.prevButton?.addEventListener("click", () => {
-        item.scrollLeft -= containerWidth;
+    this.prevButton?.addEventListener("click", () => {
+      this.container?.scrollBy({
+        left: -320,
+        behavior: "smooth",
       });
     });
   }
@@ -35,6 +32,7 @@ export default class Slide {
   init(): this {
     this.activeNext();
     this.activePrev();
+
     return this;
   }
 }

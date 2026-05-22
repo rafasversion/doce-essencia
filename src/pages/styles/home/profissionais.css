@@ -4,7 +4,7 @@
 
 .profissionais__container {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1400px;
   padding: 100px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -12,19 +12,21 @@
 }
 
 .profissional__card {
-  width: 250px;
+  width: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profissional__card-imagem {
   border-radius: 4px;
-  background-size: cover;
   object-fit: cover;
   width: 250px;
   height: 250px;
   margin-bottom: 30px;
+  display: block;
 }
-
 
 .profissional__card-redes {
   display: flex;
@@ -36,4 +38,25 @@
 .profissional__card-redes img {
   width: 20px;
   height: 20px;
+}
+
+@media (max-width: 1024px) {
+  .profissionais__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profissionais__container {
+    grid-template-columns: 1fr 1fr;
+    padding: 60px 16px;
+    gap: 20px;
+  }
+
+  .profissional__card-imagem {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 16px;
+  }
 }
